@@ -42,8 +42,30 @@ namespace Calculadora.Formulario
             {
                 dgvMostrar.DataSource = null;
                 dgvMostrar.DataSource = persona;
+                verificarRegistros();
             }
 
+        }
+
+        private void verificarRegistros()
+        {
+
+            if (persona.Count == 0)
+            {
+                btnEliminar.Enabled = false;
+            }
+            else
+            {
+                btnEliminar.Enabled = true;
+            }
+        }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            persona.RemoveAt(dgvMostrar.CurrentRow.Index);
+            dgvMostrar.DataSource = null; //limpiar el data grid view
+            dgvMostrar.DataSource = persona; //Volver a llenar el data gried view
+            verificarRegistros();
         }
     }
 }

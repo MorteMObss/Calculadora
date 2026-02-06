@@ -33,8 +33,14 @@ namespace Calculadora
 
         private void registroToolStripMenuItem_Click(object sender, EventArgs e)
         {
-           FrmRegistrosAlumnos registrosAlumnos = new FrmRegistrosAlumnos();
+            FrmRegistrosAlumnos registrosAlumnos = new FrmRegistrosAlumnos();
             registrosAlumnos.Show();
+        }
+
+        private void reToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmTemporizadores temporizadores = new FrmTemporizadores();
+            temporizadores.Show();
         }
     }
 }
