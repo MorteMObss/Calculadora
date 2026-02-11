@@ -38,6 +38,7 @@
             registroToolStripMenuItem = new ToolStripMenuItem();
             relojToolStripMenuItem = new ToolStripMenuItem();
             reToolStripMenuItem = new ToolStripMenuItem();
+            editorToolStripMenuItem = new ToolStripMenuItem();
             mnsPrincipal.SuspendLayout();
             SuspendLayout();
             // 
@@ -61,7 +62,7 @@
             // 
             // salirToolStripMenuItem
             // 
-            salirToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { aplicacionesToolStripMenuItem, calculadoraSimpToolStripMenuItem, ordenamientosToolStripMenuItem, registroToolStripMenuItem, relojToolStripMenuItem });
+            salirToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { aplicacionesToolStripMenuItem, calculadoraSimpToolStripMenuItem, ordenamientosToolStripMenuItem, registroToolStripMenuItem, relojToolStripMenuItem, editorToolStripMenuItem });
             salirToolStripMenuItem.Name = "salirToolStripMenuItem";
             salirToolStripMenuItem.Size = new Size(270, 34);
             salirToolStripMenuItem.Text = "Salir";
@@ -111,9 +112,16 @@
             // reToolStripMenuItem
             // 
             reToolStripMenuItem.Name = "reToolStripMenuItem";
-            reToolStripMenuItem.Size = new Size(270, 34);
+            reToolStripMenuItem.Size = new Size(152, 34);
             reToolStripMenuItem.Text = "Reloj";
             reToolStripMenuItem.Click += reToolStripMenuItem_Click;
+            // 
+            // editorToolStripMenuItem
+            // 
+            editorToolStripMenuItem.Name = "editorToolStripMenuItem";
+            editorToolStripMenuItem.Size = new Size(270, 34);
+            editorToolStripMenuItem.Text = "Editor";
+            editorToolStripMenuItem.Click += editorToolStripMenuItem_Click;
             // 
             // FrmMenu
             // 
@@ -142,5 +150,6 @@
         private ToolStripMenuItem registroToolStripMenuItem;
         private ToolStripMenuItem relojToolStripMenuItem;
         private ToolStripMenuItem reToolStripMenuItem;
+        private ToolStripMenuItem editorToolStripMenuItem;
     }
 }
